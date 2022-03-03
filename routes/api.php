@@ -1,5 +1,10 @@
 <?php
 
+use App\Http\Controllers\ClienteController;
+use App\Http\Controllers\PedidoController;
+use App\Http\Controllers\PedidoDeVendaController;
+use App\Http\Controllers\ProdutoController;
+use App\Http\Controllers\UnidadeController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +22,10 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+Route::apiResource('/pedidos', PedidoController::class);
+Route::apiResource('/clientes', ClienteController::class);
+Route::apiResource('/unidades', UnidadeController::class);
+Route::apiResource('/produtos', ProdutoController::class);
+Route::apiResource('/pedido', PedidoDeVendaController::class);
