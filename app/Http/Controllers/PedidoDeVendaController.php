@@ -24,16 +24,18 @@ class PedidoDeVendaController extends Controller
     public function show($id) {
 
         $pedido = PedidoDeVenda::find($id);
-        $pedido->cliente;
-        $pedido->pedido;
-        $pedido->unidade;
-        // $pedido->produto;
+
         if(!$pedido){
             return response()->json([
                 'code' => 500,
                 'msg' => 'Não foi possivel encontrar o id fornecido'
             ]);
         }
-        return response()->json($pedido);
+        return response([
+            'pedido' => [$pedido->pedido],
+            'cliente' => [$pedido->cliente],
+            'unidade' => [$pedido->unidade],
+            'produtos' => [$pedido->produto],
+        ]);
     }
 }

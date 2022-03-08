@@ -29,12 +29,12 @@ class PedidoDeVenda extends Model
 
     public function produto()
     {
-        return $this->belongsToMany(Produto::class, 'id_produto', 'id');
+        return $this->belongsTo(Produto::class, 'id_produto', 'id');
     }
 
     public function unidade()
     {
-        return $this->belongsTo(Unidade::class);
+        return $this->belongsTo(Unidade::class, 'id_unidade', 'id');
     }
 
 }
