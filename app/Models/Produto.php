@@ -9,8 +9,10 @@ class Produto extends Model
 {
     use HasFactory;
 
+    protected $hidden = ['created_at', 'updated_at', 'laravel_through_key'];
+    protected $primaryKey = 'codigo';
     protected $fillable = [
-        'id',
+        'codigo',
         'sequencia',
         'nome',
         'qtdvendida',
@@ -19,4 +21,14 @@ class Produto extends Model
         'campo2',
         'campo3'
     ];
+
+    public function pedido()
+    {
+        return $this->hasMany(Pedido::class, 'id_produto', 'codigo');
+    }
+
+    public function pedidoporProduto()
+    {
+        return $this->hasMany(pedidoporProduto::class);
+    }
 }
