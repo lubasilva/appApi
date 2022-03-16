@@ -2,10 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\Cliente;
 use App\Models\Pedido;
-use App\Models\Produto;
-use App\Models\Unidade;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -21,10 +18,7 @@ class PedidoDeVendaFactory extends Factory
     public function definition()
     {
         return [
-            'id_pedido' => Pedido::factory()->create()->id,
-            'id_cliente' => Cliente::factory()->create()->id,
-            'id_unidade' => Unidade::factory()->create()->id,
-            'id_produto' => Produto::factory()->create()->id,
+            'id_pedido' => Pedido::factory()->create()->codigo,
         ];
     }
 }
