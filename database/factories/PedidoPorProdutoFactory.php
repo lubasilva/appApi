@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Unidade>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\PedidoPorProduto>
  */
-class UnidadeFactory extends Factory
+class PedidoPorProdutoFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,7 +17,10 @@ class UnidadeFactory extends Factory
     public function definition()
     {
         return [
-            'nome' => $this->faker->name(),
+            return [
+                'id_pedido' => 1,
+                'id_produto' => $this->faker->unique()->randomDigit
+            ];
         ];
     }
 }

@@ -26,25 +26,28 @@ class PedidoDeVendaController extends Controller
 
         $pedido = PedidoDeVenda::find($id);
 
-        // dd($pedido->pedido->produtos->toArray());
+        $codigoPedido = $id;
 
         if(!$pedido){
             return response()->json([
-                'code' => 500,
-                'msg' => 'Não foi possivel encontrar o id fornecido'
+                'codigo' => 4,
+                'mensagem' => "Pedido $codigoPedido NÃO FATURADO"
             ]);
         }
 
         $referencia = $pedido->pedido->referencia;
 
+            $data = $pedido->pedido_data;
+            $data = date("Y-m-d");
+            
         return response()->json([
             'pedido' => [
                 'codigo' => $pedido->pedido->codigo,
-                'data' => $pedido->pedido->data,
+                'data' => $data,
                 'referencia' => $referencia],
-            'cliente' => [$pedido->pedido->cliente],
-            'unidade' => [$pedido->pedido->unidade],
-            'produtos' => [$pedido->pedido->produtos],
+            'cliente' => $pedido->pedido->cliente,
+            'unidade' => $pedido->pedido->unidade,
+            'produtos' => $pedido->pedido->produtos,
         ]);
     }
 }

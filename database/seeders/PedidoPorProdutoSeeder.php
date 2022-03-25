@@ -2,11 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\Unidade;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class UnidadeSeeder extends Seeder
+class PedidoPorProdutoSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,6 +14,6 @@ class UnidadeSeeder extends Seeder
      */
     public function run()
     {
-        Unidade::factory(10)->create();
+        PedidoPorProduto::factory(3)->create();
     }
 }

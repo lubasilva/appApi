@@ -1,0 +1,23 @@
+{"pedido":"123","produtos":null}
+{"pedido":"123","produtos":null}
+{"pedido":"234","produtos":null}
+ERRO: []
+[]
+ERRO: []
+[]
+ERRO: {"pedido":"2344","produtos":null}
+{"pedido":"2344","produtos":null}
+ERRO: {"pedido":"234455555","produtos":null}
+{"pedido":"234455555","produtos":null}
+ERRO: []
+[]
+ERRO: {"pedido":"9090","produtos":null}
+{"pedido":"9090","produtos":null}
+ERRO: {"pedido":"9090","produtos":null}
+{"pedido":"9090","produtos":null}
+ERRO: {"pedido":"9091","produtos":null}
+{"pedido":"9091","produtos":null}
+ERRO: {"pedido":"15","produtos":"[{\"codigo\":\"1\",\"sequencia\":\"1\",\"qtdentregue\":0,\"solicitacoes\":[],\"situacoes\":{\"186722032160C3BE\":\"6 - Cancelada\"},\"unidades\":[],\"detalhes\":[]}]","filtro_integrador":["sage","sankhya","GVS"]}
+{"pedido":"15","produtos":"[{\"codigo\":\"1\",\"sequencia\":\"1\",\"qtdentregue\":0,\"solicitacoes\":[],\"situacoes\":{\"186722032160C3BE\":\"6 - Cancelada\"},\"unidades\":[],\"detalhes\":[]}]","filtro_integrador":["sage","sankhya","GVS"]}
+ERRO: {"pedido":"15","produtos":"[{\"codigo\":\"1\",\"sequencia\":\"1\",\"qtdentregue\":1,\"solicitacoes\":[\"186722032160C3BE\"],\"situacoes\":{\"186722032160C3BE\":\"0 - Em Edi\\u00e7\\u00e3o\"},\"unidades\":[\"1\"],\"detalhes\":[{\"solicitacao\":\"186722032160C3BE\",\"titular\":\"ANGELINA OLSON:62592377077\",\"dataAprovacao\":\"0000-00-00 00:00:00\",\"unidadeExt\":\"1\",\"unidade\":\"1 - TESTE2\",\"unidadeAop\":null,\"unidadeExtAop\":null,\"extProduto\":\"1\",\"extProdutoNome\":\"PF A1 Certillion\",\"idusuario\":\"444\",\"usuario\":\"Lucas Batista Pinto Silva\",\"idcertificado\":\"95\",\"certificado\":\"AC SOLUTI Multipla \\\/ ACS PF A1 Certillion\",\"situacao\":\"0 - Em Edi\\u00e7\\u00e3o\",\"dataSituacao\":\"2022-03-21 16:51:20\",\"validadeInicio\":\"2022-03-23 17:15:01+00:00\",\"validadeFim\":\"2023-03-23 17:15:01+00:00\",\"recusas\":\"0\",\"email\":\"beatty.orland@jast.info\",\"campo1\":\"a\",\"campo2\":\"b\",\"campo3\":\"c\",\"cpfCnpj\":\"62592377077\"}]}]","filtro_integrador":["sage","sankhya","GVS"]}
+{"pedido":"15","produtos":"[{\"codigo\":\"1\",\"sequencia\":\"1\",\"qtdentregue\":1,\"solicitacoes\":[\"186722032160C3BE\"],\"situacoes\":{\"186722032160C3BE\":\"0 - Em Edi\\u00e7\\u00e3o\"},\"unidades\":[\"1\"],\"detalhes\":[{\"solicitacao\":\"186722032160C3BE\",\"titular\":\"ANGELINA OLSON:62592377077\",\"dataAprovacao\":\"0000-00-00 00:00:00\",\"unidadeExt\":\"1\",\"unidade\":\"1 - TESTE2\",\"unidadeAop\":null,\"unidadeExtAop\":null,\"extProduto\":\"1\",\"extProdutoNome\":\"PF A1 Certillion\",\"idusuario\":\"444\",\"usuario\":\"Lucas Batista Pinto Silva\",\"idcertificado\":\"95\",\"certificado\":\"AC SOLUTI Multipla \\\/ ACS PF A1 Certillion\",\"situacao\":\"0 - Em Edi\\u00e7\\u00e3o\",\"dataSituacao\":\"2022-03-21 16:51:20\",\"validadeInicio\":\"2022-03-23 17:15:01+00:00\",\"validadeFim\":\"2023-03-23 17:15:01+00:00\",\"recusas\":\"0\",\"email\":\"beatty.orland@jast.info\",\"campo1\":\"a\",\"campo2\":\"b\",\"campo3\":\"c\",\"cpfCnpj\":\"62592377077\"}]}]","filtro_integrador":["sage","sankhya","GVS"]}
