@@ -8,6 +8,12 @@ use Illuminate\Http\Request;
 class AgendamentoController extends Controller
 {
 
+    const BASE_URL = "";
+    const HMAC_VERSION = 1;
+    const CLINTID = 0;
+    const WEBSERVICEKEY = '';
+    const VIDEOCONFERENCIAKEY = '';
+
     public function importarPedido() {
         $base_url = 'https://crm-dev.lab.ca.inf.br';
         $uri = "{$base_url}/videoconferencia-api/importar-pedido";
@@ -35,13 +41,14 @@ class AgendamentoController extends Controller
 
         $client = new Client([
             'headers' => $headers,
-            'uri' => $uri
+            'verify' => false,
+            'base_uri' => $uri
         ]);
 
         
         // var_dump(openssl_get_cert_locations());
         // echo file_get_contents("/usr/lib/ssl/cert.pem");
-
+        
 
         $response = $client->post($uri, [$mensagem]);
 
