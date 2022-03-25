@@ -131,7 +131,7 @@ class AgendamentoController extends Controller
             'uri' => $uri
         ]);
 
-        $response = $client->post($uri, ['json' => $mensagem]);
+        $response = $client->post($uri, [$mensagem]);
 
         echo $response->getBody();
 
@@ -170,7 +170,7 @@ class AgendamentoController extends Controller
             'uri' => $uri
         ]);
 
-        $response = $client->post($uri, ['json' => $mensagem]);
+        $response = $client->post($uri, [$mensagem]);
 
         echo $response->getBody();
     }
